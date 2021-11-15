@@ -7,8 +7,8 @@ import java.lang.annotation.*;
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD, ElementType.ANNOTATION_TYPE, ElementType.TYPE_USE })
-@Constraint(validatedBy = ValidatorOnceSpecialCharacter.class)
-public @interface OnceSpecialCharacter {
+@Constraint(validatedBy = ValidatorOnceNumero.class)
+public @interface OnceNumero {
   String message() default "{password.invalid}";
 
   Class<?>[] groups() default {};

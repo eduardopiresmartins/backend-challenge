@@ -18,7 +18,7 @@ public class ValidatorOnceNumberTest {
   void validObject() {
     String password = "AbTp9!fok";
 
-    ValidatorOnceNumber validator = new ValidatorOnceNumber();
+    ValidatorOnceNumero validator = new ValidatorOnceNumero();
     boolean response = validator.isValid(password, context);
     assertEquals(true, response);
   }
@@ -27,7 +27,7 @@ public class ValidatorOnceNumberTest {
   void invalidObject() {
     String password = "AbTpn!fok";
 
-    ValidatorOnceNumber validator = new ValidatorOnceNumber();
+    ValidatorOnceNumero validator = new ValidatorOnceNumero();
     boolean response = validator.isValid(password, context);
     assertEquals(false, response);
   }

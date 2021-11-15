@@ -18,7 +18,7 @@ public class ValidatorRepeatedCharacterTest {
   void validObject() {
     String password = "AbTp9!fok";
 
-    ValidatorRepeatedCharacter validator = new ValidatorRepeatedCharacter();
+    ValidatorCaracterRepetido validator = new ValidatorCaracterRepetido();
     boolean response = validator.isValid(password, context);
     assertEquals(true, response);
   }
@@ -27,7 +27,7 @@ public class ValidatorRepeatedCharacterTest {
   void invalidObject() {
     String password = "AbTp9!fokk";
 
-    ValidatorRepeatedCharacter validator = new ValidatorRepeatedCharacter();
+    ValidatorCaracterRepetido validator = new ValidatorCaracterRepetido();
     boolean response = validator.isValid(password, context);
     assertEquals(false, response);
   }

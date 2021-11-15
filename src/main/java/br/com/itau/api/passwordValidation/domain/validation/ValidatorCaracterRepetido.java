@@ -3,7 +3,7 @@ package br.com.itau.api.passwordValidation.domain.validation;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class ValidatorRepeatedCharacter implements ConstraintValidator<RepeatedCharacter, String> {
+public class ValidatorCaracterRepetido implements ConstraintValidator<CaracterRepetido, String> {
   private String regex = ".*[A-Z].*";
 
   @Override

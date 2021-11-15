@@ -7,8 +7,8 @@ import java.lang.annotation.*;
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD, ElementType.ANNOTATION_TYPE, ElementType.TYPE_USE })
-@Constraint(validatedBy = ValidatorOnceUppercase.class)
-public @interface OnceUppercase {
+@Constraint(validatedBy = ValidatorOnceLetraMaiuscula.class)
+public @interface OnceLetraMaiuscula {
   String message() default "{password.invalid}";
 
   Class<?>[] groups() default {};

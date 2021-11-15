@@ -18,7 +18,7 @@ public class ValidatorOnceLowercaseTest {
   void validObject() {
     String password = "AbTp9!fok";
 
-    ValidatorOnceLowercase validator = new ValidatorOnceLowercase();
+    ValidatorOnceLetraMinuscula validator = new ValidatorOnceLetraMinuscula();
     boolean response = validator.isValid(password, context);
     assertEquals(true, response);
   }
@@ -27,7 +27,7 @@ public class ValidatorOnceLowercaseTest {
   void invalidObject() {
     String password = "ABTP9!FOK";
 
-    ValidatorOnceLowercase validator = new ValidatorOnceLowercase();
+    ValidatorOnceLetraMinuscula validator = new ValidatorOnceLetraMinuscula();
     boolean response = validator.isValid(password, context);
     assertEquals(false, response);
   }

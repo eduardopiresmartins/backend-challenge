@@ -1,6 +1,5 @@
 package br.com.itau.api.passwordValidation.domain.validation;
 
-import br.com.itau.api.passwordValidation.domain.PasswordRequest;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -19,7 +18,7 @@ public class ValidatorNonSpaceTest {
   void validObject() {
     String password = "AbTp9!fok";
 
-    ValidatorNonSpace validator = new ValidatorNonSpace();
+    ValidatorNonEspaco validator = new ValidatorNonEspaco();
     boolean response = validator.isValid(password, context);
     assertEquals(true, response);
   }
@@ -28,7 +27,7 @@ public class ValidatorNonSpaceTest {
   void invalidObject() {
     String password = "AbTp9 fok";
 
-    ValidatorNonSpace validator = new ValidatorNonSpace();
+    ValidatorNonEspaco validator = new ValidatorNonEspaco();
     boolean response = validator.isValid(password, context);
     assertEquals(false, response);
   }

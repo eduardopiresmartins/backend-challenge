@@ -18,7 +18,7 @@ public class ValidatorOnceSpecialCharacterTest {
   void validObject() {
     String password = "AbTp9!fok";
 
-    ValidatorOnceSpecialCharacter validator = new ValidatorOnceSpecialCharacter();
+    ValidatorOnceCaracterEspecial validator = new ValidatorOnceCaracterEspecial();
     boolean response = validator.isValid(password, context);
     assertEquals(true, response);
   }
@@ -27,7 +27,7 @@ public class ValidatorOnceSpecialCharacterTest {
   void invalidObject() {
     String password = "AbTp9nfok";
 
-    ValidatorOnceSpecialCharacter validator = new ValidatorOnceSpecialCharacter();
+    ValidatorOnceCaracterEspecial validator = new ValidatorOnceCaracterEspecial();
     boolean response = validator.isValid(password, context);
     assertEquals(false, response);
   }

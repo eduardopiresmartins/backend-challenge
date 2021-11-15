@@ -3,8 +3,8 @@ package br.com.itau.api.passwordValidation.domain.validation;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class ValidatorOnceLowercase implements ConstraintValidator<OnceLowercase, String> {
-  private String regex = ".*[a-z].*";
+public class ValidatorOnceCaracterEspecial implements ConstraintValidator<OnceCaracterEspecial, String> {
+  private String regex = ".*[!@#$%^&*()-+].*";
 
   @Override
   public boolean isValid(String value, ConstraintValidatorContext context) {
